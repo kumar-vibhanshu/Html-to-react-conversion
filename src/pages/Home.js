@@ -1,7 +1,6 @@
 import React from "react";
 
-import { useNavigate, Link } from 'react-router-dom';
-
+import { useNavigate, Link } from 'react-router-dom';import Carousel from 'react-bootstrap/Carousel';
 class Home extends React.Component{
     render(){
         return(
@@ -12,11 +11,18 @@ class Home extends React.Component{
                             <div className="col-lg-8  mb-5 mb-lg-0">
                                 <article className="row mb-5">
                                     <div className="col-12">
-                                        <div className="post-slider">
-                                            <img loading="lazy" src="assets/images/post/post-6.jpg" className="img-fluid" alt="post-thumb"/>
-                                            <img loading="lazy" src="assets/images/post/post-1.jpg" className="img-fluid" alt="post-thumb"/>
-                                            <img loading="lazy" src="assets/images/post/post-3.jpg" className="img-fluid" alt="post-thumb"/>
-                                        </div>
+                                        
+                                        <Carousel className="post-slider">
+                                            <Carousel.Item>
+                                                <img loading="lazy" src="assets/images/post/post-6.jpg" className="img-fluid" alt="post-thumb"/>
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img loading="lazy" src="assets/images/post/post-1.jpg" className="img-fluid" alt="post-thumb"/>    
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img loading="lazy" src="assets/images/post/post-3.jpg" className="img-fluid" alt="post-thumb"/>
+                                            </Carousel.Item>
+                                        </Carousel>
                                     </div>
                                     <div className="col-12 mx-auto">
                                         <h3><a className="post-title" href="post-elements.html">Elements That You Can Use To Create A New Post On This Template.</a></h3>
@@ -55,10 +61,15 @@ class Home extends React.Component{
                                 </article>
                                 <article className="row mb-5">
                                     <div className="col-12">
-                                        <div className="post-slider">
-                                            <img loading="lazy" src="assets/images/post/post-2.jpg" className="img-fluid" alt="post-thumb"/>
-                                            <img loading="lazy" src="assets/images/post/post-4.jpg" className="img-fluid" alt="post-thumb"/>
-                                        </div>
+                                        
+                                        <Carousel className="post-slider">
+                                            <Carousel.Item>
+                                                <img loading="lazy" src="assets/images/post/post-2.jpg" className="img-fluid" alt="post-thumb"/>
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img loading="lazy" src="assets/images/post/post-4.jpg" className="img-fluid" alt="post-thumb"/>
+                                            </Carousel.Item>
+                                        </Carousel>
                                     </div>
                                     <div className="col-12 mx-auto">
                                         <h3><a className="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
